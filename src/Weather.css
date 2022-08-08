@@ -41,4 +41,7 @@ img {
   font-weight: 400;
   position: relative;
   top: -32px;
+  line-height: -1;
+  top: -34px;
+  margin-left: 0px;
 }
