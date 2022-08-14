@@ -27,14 +27,19 @@
 }
 
 img {
+  height: 84px;
+  width: 84px;
   display: inline-block;
-  margin-right: 10px;
+margin-right: 10px;
+
 }
-.temperature {
-  font-size: 64px;
-  font-weight: bold;
-  line-height: 64px;
-  font-weight: 400;
+.WeatherTemperature {
+ font-weight: 400px;
+ font-size: 64px;
+ color: rgb(33, 33, 33);
+ line-height: 64px;
+ 
+ 
 }
 .units {
   font-size: 16px;
