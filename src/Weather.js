@@ -60,7 +60,7 @@ setCity(event.target.value)
               <input 
                 type="submit"
                 value="search"
-                className="btn btn-primary w-100"
+                className="btn btn-secondary w-100"
               />
             </div>
           </div>
