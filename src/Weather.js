@@ -6,12 +6,13 @@ import WeatherForecast from "./WeatherForecast"
 import axios from "axios";
 
 
+
 export default function Weather(props) {
   const [city,setCity]= useState(props.defaultCity)
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data.main);
+    
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -22,6 +23,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
+     
     });
 
   }
@@ -59,8 +61,8 @@ setCity(event.target.value)
             <div className="col-3">
               <input 
                 type="submit"
-                value="search"
-                className="btn btn-secondary w-100"
+                value="🔎"
+                className="btn btn-secondary w-100 "
               />
             </div>
           </div>

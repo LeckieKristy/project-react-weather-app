@@ -17,7 +17,7 @@ function day(){
     let date = new Date(props.data.dt * 1000)
     let day = date.getDay();
 
-    let days = ["Sun", "Mon","Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    let days = ["Sun", "Mon","Tue", "Wed", "Thu", "Fri", "Sat"]
 
     return days[day];
 }
@@ -26,7 +26,7 @@ function day(){
         
 <div>
 
-        <div className="WeatherForecast-day">{day()}</div>
+        <div className="WeatherForecast-day mb-2">{day()}</div>
         <WeatherIcon code={props.data.weather[0].icon}  size={38} />
         
 
